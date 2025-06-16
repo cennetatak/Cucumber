@@ -2,7 +2,7 @@
 
 
 Feature: US1004 sadece gecerli bilgilere sahip kullanicilar giris yapar
-
+@paralel1
   Scenario: TC08 Kullanici gecerli bilgilerle giris yapabilmeli
     Given kullanici "toUrl" anasayfaya gider
     Then account butonuna basar
@@ -14,7 +14,6 @@ Feature: US1004 sadece gecerli bilgilere sahip kullanicilar giris yapar
     And senkronizasyon icin 2 saniye bekler
     Then logout olur
     And senkronizasyon icin 2 saniye bekler
-    And sayfayi kapatir
 
   Scenario: TC09 Kullanici gecersiz email yazdiginda giris yapamamali
     Given kullanici "toUrl" anasayfaya gider
@@ -25,7 +24,7 @@ Feature: US1004 sadece gecerli bilgilere sahip kullanicilar giris yapar
     Then signIn butonuna basar
     And basarili giris yapilamadigini test eder
     And senkronizasyon icin 2 saniye bekler
-    Then sayfayi kapatir
+
 
   Scenario: TC10 Kullanici gecersiz password yazdiginda giris yapamamali
     Given kullanici "toUrl" anasayfaya gider
@@ -36,7 +35,7 @@ Feature: US1004 sadece gecerli bilgilere sahip kullanicilar giris yapar
     Then signIn butonuna basar
     And basarili giris yapilamadigini test eder
     And senkronizasyon icin 2 saniye bekler
-    Then sayfayi kapatir
+
 
   Scenario: TC11 Kullanici gecersiz email gecersiz password yazdiginda giris yapamamali
     Given kullanici "toUrl" anasayfaya gider
@@ -47,4 +46,3 @@ Feature: US1004 sadece gecerli bilgilere sahip kullanicilar giris yapar
     Then signIn butonuna basar
     And basarili giris yapilamadigini test eder
     And senkronizasyon icin 2 saniye bekler
-    Then sayfayi kapatir

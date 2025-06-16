@@ -7,7 +7,6 @@ Feature: US1006 kullanici testotomasyonu sayfasinda liste olarak verilen urunler
     When arama kutusuna "<aranacakUrun>" yazip aratir
     And senkronizasyon icin 1 saniye bekler
     Then arama sonucunda urun bulunabildigini test eder
-    And sayfayi kapatir
 
     Examples:
       |aranacakUrun|

@@ -1,5 +1,5 @@
 
-@wip
+
 Feature:US1008 kullanici add ve remove butonlarini calistirir
 
   Scenario:TC15 kullanici butonlarin calistigini test eder
@@ -11,4 +11,3 @@ Feature:US1008 kullanici add ve remove butonlarini calistirir
     Then Delete tusuna basar
     And Add Remove Elements yazisinin gorunur oldugunu test eder
     And senkronizasyon icin 2 saniye bekler
-    And sayfayi kapatir

@@ -11,7 +11,6 @@ Feature: US1007 kullanici verilen kullanici adi ve sifrelerle giris yapamaz
     And password olarak listede verilen "<password>" girer
     And signIn butonuna basar
     Then basarili giris yapilamadigini test eder
-    And sayfayi kapatir
 
     Examples:
       |email            |password |
